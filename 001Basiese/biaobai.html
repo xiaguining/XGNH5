@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <title>给你的诗歌</title>
+    <style type="text/css">
+        body{
+            background-image:url(./images/0.jpg);
+            background-size: 100% 120%;
+            height: 100%;
+        }
+        html{
+            height:100%;
+        }
+        @keyframes myfirst {
+            0% {
+                opacity:0;
+            }
+            25% {
+                opacity:100;
+            }
+            50% {
+                 opacity:75;
+             }
+
+           100% {
+                opacity:0;
+            }
+        }
+        @keyframes mysecond {
+            0% {
+                opacity:0;
+            }
+            50% {
+                opacity:0;
+            }
+            75% {
+                opacity:0;
+            }
+
+            100% {
+                opacity:100;
+            }
+        }
+            p{
+                font-size: 25PX;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                animation:myfirst 20s infinite;
+            }
+            #canghai{
+                animation: myfirst 8s infinite;
+            }
+            #tao{
+                animation: mysecond 7s infinite;
+            }
+    </style>
+</head>
+<body>
+       <audio src="music/再见.mp3" controls="controls" autoplay="autoplay" loop="loop">
+        </audio>
+
+        <p id="canghai">雄关漫道真如铁</p>
+        <p id="tao">如今迈步从头越</p>
+
+
+</body>
+</html>
